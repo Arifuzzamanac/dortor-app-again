@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Service from '../Service/Service';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import floride from '../../../images/fluoride.png'
 import cavity from '../../../images/cavity.png';
 import whitening from '../../../images/whitening.png';
@@ -17,6 +17,12 @@ const Services = () => {
   return (
     <Container>
       <Box sx={{ flexGrow: 1 }}>
+        <Typography sx={{ textAlign: 'center', margin: 0 }} variant="h3" gutterBottom component="div">
+          Our Services
+        </Typography>
+        <Typography sx={{ textAlign: 'center', mb: 5}} variant="h4" gutterBottom component="div">
+          Service we provide
+        </Typography>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
           {
             services.map(service => <Service
