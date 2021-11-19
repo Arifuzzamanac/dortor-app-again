@@ -18,6 +18,7 @@ const Availappointment = ({ date }) => {
       <Grid container spacing={2}>
         {
           bookings.map(book => <Bookings
+            date={date}
             key={book.id}
             book={book}
           ></Bookings>)
