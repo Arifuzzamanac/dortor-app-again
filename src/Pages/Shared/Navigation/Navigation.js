@@ -23,11 +23,11 @@ const Navigation = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Doctor Again
+            Private Doctor
           </Typography>
           <Link style={{ color: 'white', textDecoration: 'none' }} to='home'><Button sx={{ textTransform: 'capitalize' }} color="inherit">Home</Button></Link>
           <Link style={{ color: 'white', textDecoration: 'none' }} to='appointment'><Button sx={{ textTransform: 'capitalize' }} color="inherit">Appointment</Button></Link>
-          <Button sx={{ textTransform: 'capitalize' }} color="inherit">Login</Button>
+          <Link style={{ color: 'white', textDecoration: 'none' }} to='login'><Button sx={{ textTransform: 'capitalize' }} color="inherit">Login</Button></Link>
         </Toolbar>
       </AppBar>
     </Box>

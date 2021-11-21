@@ -2,8 +2,8 @@ import { Button, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import chair from '../../../images/chair.png'
 import bg from '../../../images/bg.png'
-import { red } from '@mui/material/colors';
 import { Box } from '@mui/system';
+import { NavLink } from 'react-router-dom';
 
 const bannerBg = {
   background: `url(${bg})`
@@ -25,10 +25,12 @@ const Banner = () => {
               Your New Smile <br />
               Starts Here
             </Typography>
-            <Typography variant="body1" sx={{ my: 4, marginRight: 20 }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum at, doloremque aut officia possimus recusandae eligendi ipsum quaerat iste?
+            <Typography variant="body1" sx={{ my: 4, mx: 3 }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laborum at, doloremque aut officia possimus recusandae eligendi ipsum quaerat iste recusandae eligendi ipsum quaerat iste?
             </Typography>
-            <Button sx={{ textTransform: 'capitalize' }} variant="contained">Get Appointment</Button>
+            <NavLink style={{textDecoration: 'none'}} to="appointment">
+              <Button sx={{ textTransform: 'capitalize' }} variant="contained">Get Appointment</Button>
+            </NavLink>
           </Box>
         </Grid>
         <Grid item xs={12} md={6} style={varticalCenter}>
